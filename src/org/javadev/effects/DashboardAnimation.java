@@ -79,8 +79,8 @@ public class DashboardAnimation implements Animation
         this.direction = true;
         this.animationDuration = 2000;
     }
-    
-    static /* synthetic */ void access$1(final DashboardAnimation $0, final AnimationListener $1) {
+    /* synthetic */
+    static  void access$1(final DashboardAnimation $0, final AnimationListener $1) {
         $0.listener = $1;
     }
     

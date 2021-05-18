@@ -79,8 +79,8 @@ public class CubeAnimation implements Animation
         this.direction = true;
         this.animationDuration = 2000;
     }
-    
-    static /* synthetic */ void access$1(final CubeAnimation $0, final AnimationListener $1) {
+    /* synthetic */ 
+    static void access$1(final CubeAnimation $0, final AnimationListener $1) {
         $0.listener = $1;
     }
     
@@ -248,7 +248,7 @@ public class CubeAnimation implements Animation
         }
     }
     
-    class SpecialPanel extends JPanel
+    final class SpecialPanel extends JPanel
     {
         CubeAnimation owner;
         BasicStroke stroke2;
@@ -335,12 +335,14 @@ public class CubeAnimation implements Animation
             }
             this.angle = this.beginAngle;
             final Runnable repaint = new Runnable() {
+                @Override
                 public void run() {
                     SpecialPanel.this.repaint();
                     SpecialPanel.this.getToolkit().sync();
                 }
             };
             final Thread t = new Thread(new Runnable() {
+                @Override
                 public void run() {
                     final double absDeltaAngle = Math.abs(SpecialPanel.this.deltaAngle);
                     final long initTime = System.currentTimeMillis();
@@ -368,10 +370,12 @@ public class CubeAnimation implements Animation
             t.start();
         }
         
+        @Override
         public void update(final Graphics g) {
             this.paint(g);
         }
         
+        @Override
         public synchronized void paint(final Graphics g) {
             if (this.needToStartThread) {
                 this.totalDrawTime = 0L;

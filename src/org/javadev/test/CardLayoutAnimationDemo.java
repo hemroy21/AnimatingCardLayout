@@ -30,7 +30,7 @@ import javax.swing.JTable;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
-import org.javadev.AnimatingCardLayout;
+import org.javadev.layout.AnimatingCardLayout;
 import org.javadev.effects.CubeAnimation;
 import org.javadev.effects.DashboardAnimation;
 import org.javadev.effects.FadeAnimation;
@@ -40,10 +40,8 @@ import org.javadev.effects.SlideAnimation;
 
 /**
  * Demo Application to showcase the effect of the animation card layout class library.
- * Thanks to 
- * @author Dmitry Markman,
- * @author Luca Lutterotti and
- * @author Sam Berlin
+ * Thanks to Dmitry Markman,Luca Lutterotti and Sam Berlin
+ * @author Bristi Roy
  */
 public class CardLayoutAnimationDemo extends JFrame{
     private final JButton btn1=new JButton("Show Picture");
