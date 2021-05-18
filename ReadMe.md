@@ -112,7 +112,7 @@ public class QuickDemo extends javax.swing.JFrame{
     javax.swing.JPanel panel2;
     javax.swing.JButton btn1;
     javax.swing.JButton btn2;
-    org.javadev.AnimatingCardLayout ac;
+    org.javadev.layout.AnimatingCardLayout ac;
 	
 	
     public QuickDemo(){
